@@ -1,0 +1,26 @@
+{
+  "name": "ng1-module-shared",
+  "version": "1.0.0",
+  "description": "shared module for modular app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhay-Joshi-Git/ng1-module-shared.git"
+  },
+  "keywords": [
+    "shared"
+  ],
+  "author": "Abhayj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhay-Joshi-Git/ng1-module-shared/issues"
+  },
+  "homepage": "https://github.com/Abhay-Joshi-Git/ng1-module-shared#readme",
+  "devDependencies": {
+    "grunt-angular-templates": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}
