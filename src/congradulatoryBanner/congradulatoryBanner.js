@@ -4,19 +4,17 @@
   var module = angular.module('shared');
 
   module.directive('congradulatoryBanner', [
-    'URLPrefixer',
-    function(URLPrefixer) {
+    function() {
       return {
         restrict: 'E',
         replace: false,
         scope: {
           message: '='
         },
-        templateUrl: URLPrefixer.getURL('congradulatoryBanner.html'),
+        //template: '<div>Congrats</div>',
+        templateUrl: 'congradulatoryBanner/congradulatoryBanner.html',
         link: function(scope) {
-          scope.$watch('message', function(newVal) {
-            scope.congrdulatoryMessage = "Congrats from modular app,  " + newVal
-          });
+          scope.cm = "Congrats from modular app,  " + scope.message;
         }
       };
     }]);

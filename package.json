@@ -20,7 +20,13 @@
   },
   "homepage": "https://github.com/Abhay-Joshi-Git/ng1-module-shared#readme",
   "devDependencies": {
+    "grunt": "^1.0.1",
     "grunt-angular-templates": "^1.1.0",
-    "grunt-contrib-concat": "^1.0.1"
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "serve-static": "^1.11.2"
   }
 }
