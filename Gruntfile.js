@@ -11,12 +11,19 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         copy: {
-                files: {
-                    cwd: 'src',  // set working folder / root to copy
-                    src: 'index.html',           // copy all files and subfolders
-                    dest: 'dist',    // destination folder
-                    expand: true           // required when using cwd
-                }
+                html: {
+                        cwd: 'src',  // set working folder / root to copy
+                        src: ['index.html'],           // copy all files and subfolders
+                        dest: 'dist',    // destination folder
+                        expand: true           // required when using cwd
+                    },
+                images: {
+                        cwd: 'images',
+                        src: ['*.png'],
+                        dest: 'dist/images',
+                        expand: true
+                    }
+                
         },
 
         concat: {

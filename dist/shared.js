@@ -27,7 +27,12 @@
   'use strict';
 
   $templateCache.put('congradulatoryBanner/congradulatoryBanner.html',
-    "<div class=\"congradulatory-banner-msg\">Hey, {{cm}}</div>"
+    "<div class=\"congradulatory-banner-msg\">\n" +
+    "    Hey, {{cm}}\n" +
+    "    <br />\n" +
+    "    <img src=\"images/share.png\"\n" +
+    "    <br />\n" +
+    "</div>"
   );
 
 }]);
