@@ -48,6 +48,19 @@ module.exports = function(grunt) {
                     }
                 }
             }
+        },
+        ngtemplates: {
+            shared: {
+                cwd: 'src',
+                src: '**/*.html',
+                dest: 'src/templates.js',
+                options: {
+                    htmlmin:  { 
+                        collapseWhitespace: true, 
+                        collapseBooleanAttributes: true 
+                    }
+                }
+            }
         }
     });
 
@@ -55,6 +68,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', [
         'copy',
+        'ngtemplates',
         'concat',
         'connect'
     ]);
