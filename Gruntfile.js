@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: ['src/**/*js'],
-                dest: 'dist/app.js'
+                dest: 'dist/shared.js'
             }
         },
 
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         ngtemplates: {
             shared: {
                 cwd: 'src',
-                src: '**/*.html',
+                src: '*/*.html',
                 dest: 'src/templates.js',
                 options: {
                     htmlmin:  { 
